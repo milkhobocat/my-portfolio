@@ -30,7 +30,15 @@ const config = {
         pink:{
           DEFAULT: "#F89BBF",
           100: "#E33579",
-          200: "#AB124E"
+          200: "#AB124E",
+          300: "#AE6595",
+          400: "#A3487D",
+          500: "#FCD4EB",
+          600: "#F94393",
+          700: "#F862A4",
+          800: "#F50069",
+          900: "#E0156C",
+          1000: "#CF2A71"
         },
         black: {
           DEFAULT: "#000",
@@ -46,7 +54,10 @@ const config = {
         blue: {
           "100": "#E4ECFF",
         },
-        purple: "#CBACF9",
+        purple: {
+          100: "#CBACF9",
+          200: "#1B0132"
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -105,6 +116,7 @@ const config = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+          
         shimmer: {
           from: {
             backgroundPosition: "0 0",
