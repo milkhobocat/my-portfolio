@@ -1,8 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
-import { cn } from "@/lib/utils";
-
+import { cn } from "@/lib/utils"; 
 export const TextGenerateEffect = ({
   words,
   className,
@@ -15,7 +14,8 @@ export const TextGenerateEffect = ({
   duration?: number;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
+  
   useEffect(() => {
     animate(
       "span",
@@ -24,7 +24,7 @@ export const TextGenerateEffect = ({
         filter: filter ? "blur(0px)" : "none",
       },
       {
-        duration: duration ? duration : 1,
+        duration: duration || 1,
         delay: stagger(0.2),
       }
     );
@@ -34,12 +34,12 @@ export const TextGenerateEffect = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
+          // Check if the word should be pink
+          const isPink = word.toLowerCase() === "web" || word.toLowerCase() === "developer";
           return (
             <motion.span
               key={word + idx}
-              className={`${idx === 3 ? 'text-pink-700': 'dark:text-white text-black '}
-                opacity-0`}
-            
+              className={`${isPink ? 'text-pink-700' : 'dark:text-white text-black'} opacity-0`}
             >
               {word}{" "}
             </motion.span>
@@ -52,7 +52,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="my-10">
-        <div className=" dark:text-white text-black leading-snug tracking-wide">
+        <div className="dark:text-white text-black leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>

@@ -29,7 +29,7 @@ const config = {
       colors: {
         pink:{
           DEFAULT: "#F89BBF",
-          100: "#E33579",
+          100: "#fb5488",
           200: "#AB124E",
           300: "#AE6595",
           400: "#A3487D",
