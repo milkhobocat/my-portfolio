@@ -1,5 +1,12 @@
+'use client'
+
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
+import { useState } from "react";
+import animationData from '@/data/confetti.json';
+import Lottie from "react-lottie";
+import { LuCopy } from "react-icons/lu";
+import MagicButton from "./MagicButton";
 
 export const BentoGrid = ({
   className,
@@ -39,6 +46,12 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
+  const [copied, setCopied] = useState(false);
+  const handleCopy = () => {
+    navigator.clipboard.writeText('karrelyu@outlook.com');
+
+    setCopied(true);
+  }
   return (
     <div
       className={cn(
@@ -50,7 +63,7 @@ export const BentoGridItem = ({
         backgroundColor: 'linear-gradient(90deg, rgba(27,2,37,1) 22%, rgba(17,8,11,1) 77%, rgba(64,4,31,1) 100%)',
       }}
     >
-      <div className={`${id === 6 ? 'flex justify-center h-full' : ''}`}>
+      <div className={`${id === 6 && 'flex justify-center'} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -87,27 +100,50 @@ export const BentoGridItem = ({
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 lg:gap-8">
-                {['React.js', 'Next.js'].map((item) => (
+              <span className="lg:py-0.5 lg:px-1 rounded-lg text-center bg-[#3C1A35]" />
+              <span className="py-4 px-3 rounded-lg text-center bg-[#3C1A35]" />
+                {['React.js', 'Next.js', 'Three.js'].map((item) => (
                   <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base 
-                  opacity-50 lg:opacity-100 rounded-lg text-center bg-[#3C1A35]">
+                  opacity-50 lg:opacity-60 rounded-lg text-center bg-[#3C1A35]">
                     {item}
                   </span>
                 ))}
-                <span className="py-4 px-3 rounded-lg text-center bg-[#3C1A35]" />
+                
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
+              <span className="lg:py-0.5 lg:px-1 rounded-lg text-center bg-[#3C1A35]" />
                 <span className="py-4 px-3 rounded-lg text-center bg-[#3C1A35]" />
-                {['Firebase', 'Typescript'].map((item) => (
+                {['Firebase', 'Typescript', 'SQL'].map((item) => (
                   <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base 
-                  opacity-50 lg:opacity-100 rounded-lg text-center bg-[#3C1A35]">
+                  opacity-50 lg:opacity-60 rounded-lg text-center bg-[#3C1A35]">
                     {item}
                   </span>
                 ))}
               </div>
             </div>
           )}
+          {id == 6 && (
+            <div className="mt-5 relative">
+              <div className={`absolute -bottom-5 right-0`}>
+                    <Lottie options={{
+                      loop: copied,
+                      autoplay: copied,
+                      animationData,
+                      rendererSettings:{
+                        preserveAspectRatio: 'xMidYMid slice',
+                      }
+                    }} />
+                 </div>
+                 <MagicButton
+                 title={copied ? 'Email copied' : 'Copy my email'}
+                 icon={<LuCopy />}
+                 position="left"
+                 handleClick={handleCopy}/>
+              </div>
+          )}
         </div>
       </div>
     </div>
+    
   );
 };
