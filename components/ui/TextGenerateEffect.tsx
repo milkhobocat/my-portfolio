@@ -35,7 +35,7 @@ export const TextGenerateEffect = ({
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
           // Check if the word should be pink
-          const isPink = word.toLowerCase() === "web" || word.toLowerCase() === "developer";
+          const isPink = word.toLowerCase() === "web" || word.toLowerCase() === "applications" || word.toLowerCase() === "software" || word.toLowerCase() === "engineer" || word.toLowerCase() === "dynamic" || word.toLowerCase() === "transformative" || word.toLowerCase() === "digital"|| word.toLowerCase() === "experiences";
           return (
             <motion.span
               key={word + idx}

@@ -47,11 +47,13 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const [copied, setCopied] = useState(false);
-  const handleCopy = () => {
-    navigator.clipboard.writeText('karrelyu@outlook.com');
 
+  const handleCopy = () => {
+    const text = "karrelyu@outlook.com";
+    navigator.clipboard.writeText(text);
     setCopied(true);
-  }
+  };
+  
   return (
     <div
       className={cn(
@@ -84,7 +86,7 @@ export const BentoGridItem = ({
         </div>
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute inset-0 z-50 flex items-center justify-center text-white font-bold" />
+            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
           </BackgroundGradientAnimation>
         )}
         <div className={cn(
@@ -130,15 +132,17 @@ export const BentoGridItem = ({
                       autoplay: copied,
                       animationData,
                       rendererSettings:{
-                        preserveAspectRatio: 'xMidYMid slice',
+                      preserveAspectRatio: 'xMidYMid slice',
                       }
                     }} />
                  </div>
+                 
                  <MagicButton
-                 title={copied ? 'Email copied' : 'Copy my email'}
-                 icon={<LuCopy />}
-                 position="left"
-                 handleClick={handleCopy}/>
+                   title={copied ? "Email Copied!" : "Copy my email"}
+                   icon={<LuCopy />}
+                   position="left"
+                   handleClick={handleCopy}
+                 />
               </div>
           )}
         </div>

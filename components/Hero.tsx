@@ -38,7 +38,7 @@ const Hero = () => {
                     </div>
                     {/* Use TextGenerateEffect for animation */}
                     <TextGenerateEffect 
-                        words="Young Professional Web Developer based in Toronto, Canada"
+                        words="Passionate Software Engineer focused on crafting Dynamic Web Applications"
                         className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl"
                         filter={false}
                         duration={1}

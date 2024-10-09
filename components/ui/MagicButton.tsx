@@ -15,11 +15,9 @@ const MagicButton = ({
   otherClasses?: string;
 }) => {
   return (
-    <button
-    //onClick={handleClick} // Attach the handleClick function to the button's onClick event
-      className="relative inline-flex h-12 overflow-hidden rounded-lg p-[1px] md:w-60 md:mt-10"
-     onClick={handleClick} // Attach the handleClick function to the button's onClick event
-    >
+    <button className="relative inline-flex h-12 overflow-hidden rounded-lg p-[1px] md:w-60 md:mt-10" // Attach the handleClick function to the button's onClick event
+      onClick={handleClick}
+      >
       <span
         className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#fffccb_0%,#ff3e71_50%,#fff8d0_100%)]"
       />
