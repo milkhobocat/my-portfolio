@@ -26,7 +26,7 @@ const Hero = () => {
             <div className="flex justify-center relative my-20 z-10">
                 <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
                     <h2 className="uppercase tracking-widest text-xs text-center text-pink-500 max-w-80">
-                        A Next.js project
+                    Create. adapt. achieve
                     </h2>
                     {/* using image in hero */}
                     <div className="text-center mb-8">
