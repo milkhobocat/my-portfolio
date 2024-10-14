@@ -2,7 +2,6 @@ export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
   ];
   
   export const gridItems = [
@@ -72,35 +71,35 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      title: "Modern Portfolio",
+      des: "Utilizing Next.js, Tailwind CSS, TypeScript, and Framer Motion, I developed an engaging personal portfolio that showcases my work and skills.",
+      img: "/project1.png",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/sentry-logo.svg", "fm.svg"],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      title: "PALATE - Calorie Counter",
+      des: "Provides users with a straightforward and efficient way to track their calorie intake, making it easier to monitor their dietary habits and maintain their health goals.",
+      img: "/project28.png",
+      iconLists: ["/re.svg", "/Bootstrap_logo.png","/firebase.png","/JavaScript-logo.png"],
+      link: "https://github.com/milkhobocat/nutrition-web-app",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      title: "Calmness - Mood Diary Web App",
+      des: "A mood tracker which allows users to input and track their emotional states to better understand their mental health.",
+      img: "/project3.png",
+      iconLists: ["/re.svg", "/Bootstrap_logo.png","/firebase.png","/JavaScript-logo.png"],
+      link: "https://github.com/milkhobocat/calmness-app",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      title: "Word Guesser Game",
+      des: "Players identify a hidden word and earn character kaomojis as rewards if guessed correctly.",
+      img: "/project4.png",
+      iconLists: ["/java-logo.png"],
+      link: "https://github.com/milkhobocat/word-guess-game",
     },
   ];
   
@@ -108,96 +107,39 @@ export const navItems = [
     {
       quote: "I would highly recommend Karrel for any role she might want to take up. She has a good intellectual ability, problem solving skills, people skills, maturity, and a sense of real enthusiasm to be excellent and contribute significantly to whatever she is doing.[…] She was very good at programming Java in her modules on Algorithms and Data structures, Software Testing, Programming languages and compilers, and Music application programming.",
       name: "Prof. Joseph Timoney",
-      title: "Former Head of Department, Computer Science, Maynooth University, Ireland",
+      title: "Executive Vice Dean of the MIEC, Maynooth University, China & Former Head of Department, Computer Science",
+    },
+    {
+      quote: "Karrel is a reliable and creative teammate. She designed the wireframes and 3D components to our projects, and helped developed key features in React. She planned our project timetables to keep our works consistent. In addition, she is our best spokesperson and she carried most of our presentations. She will definitely be a fantastic addition to your team!",
+      name: "Julia Rodrigo",
+      title: "Software Developer",
     },
     {
       quote:
-        "",
-      name: "",
-      title: "",
-    },
-    {
-      quote:
-        "",
-      name: "",
-      title: "",
-    },
-    {
-      quote:
-        "",
-      name: "",
-      title: "",
-    },
-    {
-      quote:
-        "",
-      name: "",
-      title: "",
+        "Working with Karrel on various projects has always been so seamless. She is an amicable and pleasant person to work with. This is shown through her hardworking attitude, her positive mindset when facing challenging problems, and her creative flair, which is vibrantly present in anything she produces! If you are seeking someone who will put passion into their projects and truly showcase their creative nature and attention to detail, Karrel is the ideal partner to have!",
+      name: "Rufus Tenali",
+      title: "Software Developer",
     },
   ];
   
-  export const companies = [
-    {
-      id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
-  ];
+  
   
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "DevOps Service Support Engineer",
+      desc: "Assisted in incident management, trained in Agile methodologies and monitored distributed systems.",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      thumbnail: "/verizon-connect-red.png",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
-    },
-    {
-      id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
-    },
-    {
-      id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Freelance Web Dev",
+      desc: "Building websites with the use of Next.js and Three.js to create dynamic web experiences for clients",
       className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
+      thumbnail: "/3Dmodels.png",
     },
+
   ];
   
   export const socialMedia = [
