@@ -2,6 +2,7 @@ export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Testimonials", link: "#testimonials" },
+    { name: "Contact", link: "#contact" },
   ];
   
   export const gridItems = [
@@ -75,12 +76,12 @@ export const navItems = [
       des: "Utilizing Next.js, Tailwind CSS, TypeScript, and Framer Motion, I developed an engaging personal portfolio that showcases my work and skills.",
       img: "/project1.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/sentry-logo.svg", "fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: " ",
     },
     {
       id: 2,
       title: "PALATE - Calorie Counter",
-      des: "Provides users with a straightforward and efficient way to track their calorie intake, making it easier to monitor their dietary habits and maintain their health goals.",
+      des: "A simple way to track calorie intake for monitoring dietary habits and health goals.",
       img: "/project28.png",
       iconLists: ["/re.svg", "/Bootstrap_logo.png","/firebase.png","/JavaScript-logo.png"],
       link: "https://github.com/milkhobocat/nutrition-web-app",
@@ -149,10 +150,6 @@ export const navItems = [
     },
     {
       id: 2,
-      img: "/twit.svg",
-    },
-    {
-      id: 3,
       img: "/link.svg",
     },
   ];
