@@ -75,8 +75,9 @@ export const navItems = [
       title: "Modern Portfolio",
       des: "Utilizing Next.js, Tailwind CSS, TypeScript, and Framer Motion, I developed an engaging personal portfolio that showcases my work and skills.",
       img: "/project1.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/sentry-logo.svg", "fm.svg"],
       link: "https://github.com/milkhobocat/my-portfolio",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/sentry-logo.svg", "fm.svg"],
+      
     },
     {
       id: 2,
