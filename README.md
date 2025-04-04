@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Portfolio
 
-## Getting Started
+## Description
 
-First, run the development server:
+Ny first Next.js project showing who I am as a developer! 😊
+
+## Running the code
+
+How to get the project running locally:
 
 ```bash
+git clone https://github.com/milkhobocat/my-portfolio.git
+cd my-portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+See [Next.js](https://nextjs.org/) documentation for help.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tech Stack
 
-## Learn More
+- Next.js (for React framework)
 
-To learn more about Next.js, take a look at the following resources:
+- Tailwind CSS (for styling)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Womp (for icons)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Vercel (for deployment)
 
-## Deploy on Vercel
+- Sentry (for error tracking)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Framer Motion (for animations)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Features
+
+- Dynamic and interactive UIs with the use of [Aceternity](https://ui.aceternity.com/)
+- Integrated [Sentry](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwijxeq_3L6MAxWLEEQIHbuPAvIYABAAGgJkeg&ae=2&aspm=1&co=1&ase=5&gclid=Cj0KCQjwhr6_BhD4ARIsAH1YdjBESl_ABoP-74iirZTGTEYHqGQ_Kjy7cJYAR99nOYueUKT6ADgLdhYaAmMyEALw_wcB&ei=r_7vZ-6JMOTtptQPu5fLsAI&ohost=www.google.com&cid=CAESV-D2aY_1ZfeJ0Xh41TDHYP5f5xTl1_LMMubp8Vt-DePmoL5HQmiSN2hDSWCGdAbMzzZRq66dsIGiIhewV7aPlVjdCGKx6OYZwm6GsLc-rnOwBiravSbneA&sig=AOD64_0vrdtK39o1XSGn4RvwZ3-q2VVMRA&q&sqi=2&adurl&ved=2ahUKEwiunde_3L6MAxXktokEHbvLEiYQ0Qx6BAgIEAE) for real-time error tracking, bug reporting ensuring quick identification and resolution of issues.
+- Incorporated 3D models built with [Womp](https://womp.com/)
+- Use of [Vercel](https://vercel.com/home) for deployment
+
+## Any Bugs? 
+
+Sentry is used for error tracking. 
+
+if you spot a bug:
+Please use the **Sentry** report button on the bottom right of your screen to report and include steps to reproduce.

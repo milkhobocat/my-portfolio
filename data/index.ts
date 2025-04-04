@@ -49,7 +49,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently developing a website for a community-focused nonprofit",
+      title: "Building a React-based kaomoji library with search, categories, copy-to-clipboard, and favorites—styled with Tailwind CSS and set to be deployed on Vercel. ",
       description: "Present Focus",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -136,10 +136,10 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Freelance Web Dev",
-      desc: "Building websites with the use of Next.js and Three.js to create dynamic web experiences for clients",
+      title: "Office Administrative Support",
+      desc: "Handled onboarding, Sumac CRM data entry, and fundraising prep while maintaining confidentiality and tech support during orientations.",
       className: "md:col-span-2",
-      thumbnail: "/3Dmodels.png",
+      thumbnail: "/dixon-hall.png",
     },
 
   ];
