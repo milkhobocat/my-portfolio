@@ -89,11 +89,11 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "Calmness - Mood Diary Web App",
-      des: "A mood tracker which allows users to input and track their emotional states to better understand their mental health.",
-      img: "/project3.png",
-      iconLists: ["/re.svg", "/Bootstrap_logo.png","/firebase.png","/JavaScript-logo.png"],
-      link: "https://github.com/milkhobocat/calmness-app",
+      title: "Kaokaomoji - Emoticon Library",
+      des: "A kaomoji library where users can browse through categories and copy an emoticon",
+      img: "/project7.png",
+      iconLists: ["/next.svg", "/tail.svg","/ts.svg"],
+      link: "https://github.com/milkhobocat/kaokaomoji",
     },
     {
       id: 4,
