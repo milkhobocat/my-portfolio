@@ -49,7 +49,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Building a React-based kaomoji library with search, categories, copy-to-clipboard, and favorites—styled with Tailwind CSS and set to be deployed on Vercel. ",
+      title: "Creating a game with NextJS & ThreeJS",
       description: "Present Focus",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
